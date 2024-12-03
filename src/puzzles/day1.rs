@@ -31,7 +31,7 @@ pub fn solve() {
 
             let dot_product: i32 = counts.iter().map(|(key, value)| key * value).sum();
 
-            println!("    Day 1 Part 2 Solution: {}", dot_product);
+            println!("    Day 1, Part 2 Solution: {}", dot_product);
         }
         Err(e) => eprintln!("Error reading file: {}", e),
     }
