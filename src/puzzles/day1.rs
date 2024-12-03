@@ -21,7 +21,7 @@ pub fn solve() {
             println!("    Day 1, Part 1 Solution: {}", total_distance);
 
             let unique: HashSet<i32> = col1.into_iter().collect();
-            let mut counts: HashMap<i32, i32> = unique.iter().map(|&key| (key, 0)).collect();
+            let mut counts: HashMap<i32, i32> = Default::default();
 
             for &num in &col2 {
                 if unique.contains(&num) {
